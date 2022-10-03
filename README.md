@@ -5,6 +5,10 @@ MicroPython & PCB Class 2022 repo.
 
 <br>
 
+# Prerequisites (ideally before class starts)
+* Install Thonny
+* Install Kicad 6 -- follow through their installation procedure to make sure you have symbol and footprint libraries. Hit us up in the Discord class channel if you have any issues.
+
 # Parts
 [Raspberry Pi Pico w/ Pre-Soldered Headers](https://www.amazon.com/Raspberry-Microcontroller-Development-Dual-Core-Processor/dp/B08TN4VLN7?crid=13SC9RF6AR4FG&keywords=raspberry+pi+pico&qid=1661530301&sprefix=raspberry+pi+pico,aps,98&sr=8-11&linkCode=sl1&tag=540baab-20&linkId=3f7a7fddf92c960705a15b6c127fc1d6&language=en_US&ref_=as_li_ss_tl)<br>
 [Breadboard & Wires](https://amzn.to/3LBkxHO) [updated link 2022-09-21] <br>
