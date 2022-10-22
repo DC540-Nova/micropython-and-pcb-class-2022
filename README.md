@@ -19,5 +19,7 @@ MicroPython & PCB Class 2022 repo.
 # PCB Design
 [Lesson 3 - Basic PCB Design](https://github.com/DC540-Nova/micropython-and-pcb-class-2022/tree/main/chapter_03_basic_PCB_design)
 
+<br>
+
 #License
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
