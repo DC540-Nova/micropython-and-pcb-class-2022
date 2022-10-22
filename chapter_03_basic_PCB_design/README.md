@@ -5,7 +5,7 @@ MicroPython & PCB Class 2022 Chapter 3 - Basic PCB Design.
 
 <br>
 
-## prerequisite - WATCH LESSON 3 [video](https://www.youtube.com/watch?v=9N72FxIyK1k)
+## PREREQUISITE - WATCH LESSON 3 [video](https://www.youtube.com/watch?v=9N72FxIyK1k)
 
 <br>
 
@@ -126,54 +126,63 @@ select folder
 (X)
 ```
 
-# STEP 10: 
-
+# STEP 10: Place Pico Footprint
+```bash
 open schematic in eeschema
 (right-click inside empty area in Pico and click properties)
-	(click footprint RPi_Pico-RPi_Pico_SMD_TH and click bookshelf icon and ok)
-		(search) MCU_RaspberryPi_and_Boards
-			(double-click) RPi_Pico_SMD_TH
-				OK
+(click footprint RPi_Pico-RPi_Pico_SMD_TH and click bookshelf icon and ok)
+(search) MCU_RaspberryPi_and_Boards
+(double-click) RPi_Pico_SMD_TH
+OK
 open PCB in board editor
 update PCB with changes made to schematic [F8]
-	update PCB
-		close
+update PCB
+close
+```
+
+# STEP 11: Connect & Arrage Neopixels 
+```bash
 (arrange WS2812B's appropriately where GP18 connects to 1st WS2812B's NP, etc)
 ([r] when necessary)
 (*NOTE: click in black area in center of WS2812B to move whole unit rather than pieces*)
 edit board setup including layers, design rules and various defaults
-	design rules
-		net classes
-			+
-				PWR
-					track width
-						0.35 mm
-							net
-								/3V3
-									net class
-										PWR
-								/GND
-									net class
-										PWR
-											OK
+design rules
+net classes
++
+PWR
+track width
+0.35 mm
+net
+/3V3
+net class
+PWR
+/GND
+net class
+PWR
+OK
+```
+
+# STEP 12: Route Tracks & Check Design
+```
 route tracks [x]
-	(click GP18 on Pico and conect to NP on first WS2812B)
-	(connect 2nd to 3rd, etc)
-	(click 3V3 on Pico and connect to 3V3 on first WS2812B)
-	(connect 2nd to 3rd, etc)
+(click GP18 on Pico and conect to NP on first WS2812B)
+(connect 2nd to 3rd, etc)
+(click 3V3 on Pico and connect to 3V3 on first WS2812B)
+(connect 2nd to 3rd, etc)
 edge cuts
-	draw a rectangle
-		(draw box around circuit)
+draw a rectangle
+(draw box around circuit)
 F.Cu
-	add a filled zone [CTRL-SHIFT-Z]
-		(click) /GND
-			ok
-				(draw ouside board trace, click upper left and drag and click as appropriate)
-				(double-click to finish)
+add a filled zone [CTRL-SHIFT-Z]
+(click) /GND
+ok
+(draw ouside board trace, click upper left and drag and click as appropriate)
+(double-click to finish)
 fill all zones [b]
 show the design rules checker window
-	run DRC
-		close
+run DRC
+close
+```
 
 <br>
 
