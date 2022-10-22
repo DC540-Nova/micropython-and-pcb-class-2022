@@ -5,11 +5,14 @@ MicroPython & PCB Class 2022 Chapter 3 - Basic PCB Design.
 
 <br>
 
-```
+# STEP 1: Create Project
+```bash
 file
-	new project
-		0x01-class
-			SAVE
+new project
+0x01-class
+SAVE
+```
+
 double-click 0x01-class-kicad_sch
 visit https://github.com/ncarandini/KiCad-RP-Pico
 	code
