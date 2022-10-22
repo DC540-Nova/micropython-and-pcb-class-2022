@@ -5,6 +5,10 @@ MicroPython & PCB Class 2022 Chapter 3 - Basic PCB Design.
 
 <br>
 
+## prerequisite - WATCH LESSON 3 [video](https://www.youtube.com/watch?v=9N72FxIyK1k)
+
+<br>
+
 # STEP 1: Create Project
 ```bash
 file
@@ -13,40 +17,59 @@ new project
 SAVE
 ```
 
+# STEP 2: Open Schematic
+```bash
 double-click 0x01-class-kicad_sch
 visit https://github.com/ncarandini/KiCad-RP-Pico
-	code
-		download ZIP
-			(unzip file)
+code
+download ZIP
+(unzip file)
+```
+
+# STEP 3: Add Pico Footprint To SCH
+```bash
 create, delete and edit footprints
-	file
-		add library
-			global
-				KiCad-RP-Pico-main
-					RP-Pico Libraries
-						MCU_RapsberryPi_and_Boards.kicad_sym
-							select folder
+file
+add library
+global
+KiCad-RP-Pico-main
+RP-Pico Libraries
+MCU_RapsberryPi_and_Boards.kicad_sym
+select folder
+```
+
+# STEP 4: Place Pico Footprint
+```bash
 place
-	add symbol [a]
-		(search) Pico
-			MCU_RapsberryPi_and_Boards
-				Pico
-					OK
-	add symbol [a]
-		(search) WS2812B
-			LED
-				WS2812B
-					OK
+add symbol [a]
+(search) Pico
+MCU_RapsberryPi_and_Boards
+Pico
+OK
+```
+
+# STEP 5: Place NeoPixel Footprints
+```bash
+place
+add symbol [a]
+(search) WS2812B
+LED
+WS2812B
+OK
 (hover over WS2812B, click and CTRL-C and CTRL-V)
 (repeat 5x and place)
+```
+
+# STEP 6: Add A Power Port & Net Label
+```bash
 add a power port [p]
-	(search) +3V3
-		power
-			+3V3
-				OK
+(search) +3V3
+power
++3V3
+OK
 add a net label [l]
-	3V3
-		OK
+3V3
+OK
 (attach to wire hole on +3V3)
 (click 3V3)
 (click [m])
@@ -54,41 +77,57 @@ add a net label [l]
 (delete +3V3 and optional wire)
 (hover over 3V3 on Pico, click and CTRL-C and CTRL-V)
 (attach to wire hole on 1st WS2812B's VDD and repeat 5x for other WS2812B's)
+```
+
+# STEP 7: Add GND Net Label & Wire Up GND's To Neopixels
+```bash
 add a net label [l]
-	GND
-		OK
+GND
+OK
 (attach to GND Pin 38 on Pico)
 (hover over GND on Pico, click and CTRL-C and CTRL-V)
 (attach to other GND pins on Pico, [r] when necessary)
 (hover over any GND on Pico, click and CTRL-C and CTRL-V)
 (attach to wire hole on 1st WS2812B's VSS and repeat 5x for other WS2812B's)
+```
+
+# STEP 8: Add NeoPixel Net Label & Wire Up Neopixels
+```bash
 add a net label [l]
-	NP
-		OK
+NP
+OK
 (attach to GPIO18 on Pico)
 (hover over NP and CTRL-C and CTRL-V 1x)
 (hover over NP and CTRL-C and CTRL-V 1x)
 (type [r] 2x and attach to DIN hole on 1st WS2812B)
 add a wire [w]
-	(attach to DOUT on 1st WS2812B and connect to DIN on 2nd WS2812B)
-	(repeat process to remainder of WS2812B's)
+(attach to DOUT on 1st WS2812B and connect to DIN on 2nd WS2812B)
+(repeat process to remainder of WS2812B's)
+```
+
+# STEP 9: Add Pico Footprint To PCB
+```bash
 open PCB in board editor
 update PCB with changes made to schematic [F8]
-	annotate
-		update PCB
-			close
+annotate
+update PCB
+close
 create, delete and edit footprints
-	file
-		add library
-			global
-				KiCad-RP-Pico-main
-					RP-Pico Libraries
-						MCU_RapsberryPi_and_Boards.pretty
-							select folder
-								(search) RPi_Pico_SMD_TH
-									(double-click)
-										(save)
-											(X)
+file
+add library
+global
+KiCad-RP-Pico-main
+RP-Pico Libraries
+MCU_RapsberryPi_and_Boards.pretty
+select folder
+(search) RPi_Pico_SMD_TH
+(double-click)
+(save)
+(X)
+```
+
+# STEP 10: 
+
 open schematic in eeschema
 (right-click inside empty area in Pico and click properties)
 	(click footprint RPi_Pico-RPi_Pico_SMD_TH and click bookshelf icon and ok)
@@ -135,7 +174,6 @@ fill all zones [b]
 show the design rules checker window
 	run DRC
 		close
-```
 
 <br>
 
