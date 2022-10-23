@@ -16,10 +16,8 @@ MicroPython & PCB Class 2022 repo.
 [NeoPixel Ring](https://www.amazon.com/Stemedu-WS2812B-Integrated-Drivers-Raspberry/dp/B09MHX78WL?crid=2C4AG9RZT6W9J&keywords=neopixel%2Bring&qid=1661976974&s=hi&sprefix=neopixel%2Bring,tools,54&sr=1-4&th=1&linkCode=sl1&tag=540baab-20&linkId=e2077e5200e67458f7c71553bfc39023&language=en_US&ref_=as_li_ss_tl)<br>
 [SSD1306 Display](https://www.amazon.com/HiLetgo-Serial-128X64-Display-Color/dp/B06XRBTBTB?crid=H7MU2U37O3GF&keywords=ssd1306+oled+display&qid=1661556692&sprefix=ssd1306,aps,72&sr=8-9&linkCode=sl1&tag=540baab-20&linkId=b2929946a48e2fb56bf9353001b6bba1&language=en_US&ref_=as_li_ss_tl)<br>
 
-# Video Lessons
-### [Lesson 1 - Introduction To MicroPython](https://youtu.be/0cYwsJwPT4I)
-### [Lesson 2 - Basic Breadboarding & MicroPython Basics](https://youtu.be/PYTVMm8ZJN8)
-### [Lesson 3 - Basic PCB Design](https://github.com/DC540-Nova/micropython-and-pcb-class-2022/tree/main/chapter_03_basic_PCB_design)
+# Lesson Playlist
+### [YouTube](https://youtube.com/playlist?list=PLvHfoRwREM9NEh0unEx78AdT5MzEejzg7)
 
 <br>
 
