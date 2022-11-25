@@ -9,7 +9,7 @@ MicroPython & PCB Class 2022 repo.
 * Install Thonny
 * Install Kicad 6 -- follow through their installation procedure to make sure you have symbol and footprint libraries. Hit us up in the Discord class channel if you have any issues.
 
-# Parts
+# Parts (Amazon links are Amazon Associate Links, purchasing through these links Benefits DC540)
 [Raspberry Pi Pico w/ Pre-Soldered Headers](https://www.amazon.com/Raspberry-Microcontroller-Development-Dual-Core-Processor/dp/B08TN4VLN7?crid=13SC9RF6AR4FG&keywords=raspberry+pi+pico&qid=1661530301&sprefix=raspberry+pi+pico,aps,98&sr=8-11&linkCode=sl1&tag=540baab-20&linkId=3f7a7fddf92c960705a15b6c127fc1d6&language=en_US&ref_=as_li_ss_tl)<br>
 [Breadboard & Wires](https://amzn.to/3LBkxHO) [updated link 2022-09-21] <br>
 [Push Buttons](https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2?crid=397PJODSKLVT8&keywords=5mm+4-post+push+button&qid=1661556619&sprefix=5mm+4-post+push+button,aps,43&sr=8-8&linkCode=sl1&tag=540baab-20&linkId=967552c52062183be0af39d3209359f7&language=en_US&ref_=as_li_ss_tl)<br>
